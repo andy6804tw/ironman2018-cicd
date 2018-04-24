@@ -10,6 +10,6 @@ node{
     stage '建立映像檔'
     sh("docker build -t ${imgWithTag} .")
 
-    // stage '放置映像檔'
-    // sh("gcloud docker -- push ${imgWithTag} ")
+    stage '放置映像檔'
+    sh("gcloud docker -- push ${imgWithTag} ")
 }
