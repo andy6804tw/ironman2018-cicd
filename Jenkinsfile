@@ -8,6 +8,6 @@ node{
     checkout scm
 
     stage '建立映像檔'
-    sh("echo $'hello\nworld' ")
+    sh("ls")
 
 }
